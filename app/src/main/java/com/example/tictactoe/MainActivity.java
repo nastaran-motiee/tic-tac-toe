@@ -3,12 +3,17 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ClipDrawable;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
     int b1=5,b2=5,b3=5,b4=5,b5=5,b6=5,b7=5,b8=5,b9=5,xCount=0,oCount=0,i=0;
     private TextView scorex,scoreo;
     private Button Reset;
+
+    //-----
+    private Dialog dialog;
+    //------
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         button7 = findViewById(R.id.buttonImage7);
         button8 = findViewById(R.id.buttonImage8);
         button9 = findViewById(R.id.buttonImage9);
+        //------------//
+        dialog = new Dialog(this);
+        //----------//
 
         scorex = findViewById(R.id.ScoreX);
         scoreo = findViewById(R.id.ScoreO);
@@ -52,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
                 resetValues();
                 xCount = 0;
                 oCount = 0;
-                scorex.setText("Score X : "+String.valueOf(xCount));
-                scoreo.setText("Score O : "+String.valueOf(oCount));
+                scorex.setText("Score: "+String.valueOf(xCount));
+                scoreo.setText("Score: "+String.valueOf(oCount));
 
 
 
@@ -233,210 +247,75 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void winningGame(){
-
         if(b1==1 && b2==1 && b3==1){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
+            scorex.setText("Score: "+String.valueOf(xCount));
         }else if(b4==1 && b5==1 && b6==1){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
+            scorex.setText("Score: "+String.valueOf(xCount));
         }else if(b7==1 && b8==1 && b9==1){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
+            scorex.setText("Score: "+String.valueOf(xCount));
         }else if(b1==1 && b4==1 && b7==1){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
-        }else if(b2==1 && b2==5 && b3==8){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            scorex.setText("Score: "+String.valueOf(xCount));
+        }else if(b2==1 && b5==1 && b8==1){
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
+            scorex.setText("Score: "+String.valueOf(xCount));
         }else if(b3==1 && b6==1 && b9==1){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
+            scorex.setText("Score: "+String.valueOf(xCount));
         }else if(b1==1 && b5==1 && b9==1){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
-        }else if(b3==1 && b5==1 && b7 ==1){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player X wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            scorex.setText("Score: "+String.valueOf(xCount));
+        }else if(b3==1 && b5==1 && b7==1){
+            openHeartDialog();
             xCount++;
-            scorex.setText("Score X : "+String.valueOf(xCount));
-        }
-
-        if(b1==0 && b2==0 && b3 ==0){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setMessage("Player O wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    button1.setImageDrawable(null);
-                    button2.setImageDrawable(null);
-                    button3.setImageDrawable(null);
-                    button4.setImageDrawable(null);
-                    button5.setImageDrawable(null);
-                    button6.setImageDrawable(null);
-                    button7.setImageDrawable(null);
-                    button8.setImageDrawable(null);
-                    button9.setImageDrawable(null);
-                    resetValues();
-
-                }
-            });
-            AlertDialog alertDialog = builder.create();
-            alertDialog.show();
+            scorex.setText("Score: "+String.valueOf(xCount));
+        }else if(b1==0 && b2==0 && b3==0){
+            openBrainDialog();
             oCount++;
-            scoreo.setText("Score O : "+String.valueOf(oCount));
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else if(b4==0 && b5==0 && b6==0){
+            openBrainDialog();
+            oCount++;
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else if(b7==0 && b8==0 && b9==0){
+            openBrainDialog();
+            oCount++;
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else if(b1==0 && b4==0 && b9==0){
+            openBrainDialog();
+            oCount++;
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else if(b2==0 && b5==0 && b8==0){
+            openBrainDialog();
+            oCount++;
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else if(b3==0 && b6==0 && b9==0){
+            openBrainDialog();
+            oCount++;
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else if(b1==0 && b5==0 && b9==0){
+            openBrainDialog();
+            oCount++;
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else if(b3==0 && b5==0 && b7==0){
+            openBrainDialog();
+            oCount++;
+            scoreo.setText("Score: "+String.valueOf(oCount));
+        }else{
+            if(i == 9){
+               openXDialog();
+            }
         }
-
-
 
     }
 
@@ -459,6 +338,7 @@ public class MainActivity extends AppCompatActivity {
         b7 = 5;
         b8 = 5;
         b9 = 5;
+        i = 0;
         button1.setEnabled(true);
         button2.setEnabled(true);
         button3.setEnabled(true);
@@ -469,6 +349,87 @@ public class MainActivity extends AppCompatActivity {
         button8.setEnabled(true);
         button9.setEnabled(true);
 
+    }
+
+    //Custom heart win
+    private void openHeartDialog(){
+        dialog.setContentView(R.layout.heart_dialog);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Button btnOk = dialog.findViewById(R.id.buttonOk1);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
+                button1.setImageDrawable(null);
+                button2.setImageDrawable(null);
+                button3.setImageDrawable(null);
+                button4.setImageDrawable(null);
+                button5.setImageDrawable(null);
+                button6.setImageDrawable(null);
+                button7.setImageDrawable(null);
+                button8.setImageDrawable(null);
+                button9.setImageDrawable(null);
+                resetValues();
+            }
+        });
+        dialog.show();
+
 
     }
+
+    //Custom brain win
+    private void openBrainDialog(){
+        dialog.setContentView(R.layout.brain_dialog);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Button btnOk = dialog.findViewById(R.id.buttonOk2);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
+                button1.setImageDrawable(null);
+                button2.setImageDrawable(null);
+                button3.setImageDrawable(null);
+                button4.setImageDrawable(null);
+                button5.setImageDrawable(null);
+                button6.setImageDrawable(null);
+                button7.setImageDrawable(null);
+                button8.setImageDrawable(null);
+                button9.setImageDrawable(null);
+                resetValues();
+            }
+        });
+        dialog.show();
+
+    }
+
+    //Custom No one wins
+    private void openXDialog(){
+        dialog.setContentView(R.layout.x_dialog);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Button btnOk = dialog.findViewById(R.id.buttonOk3);
+        btnOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
+                button1.setImageDrawable(null);
+                button2.setImageDrawable(null);
+                button3.setImageDrawable(null);
+                button4.setImageDrawable(null);
+                button5.setImageDrawable(null);
+                button6.setImageDrawable(null);
+                button7.setImageDrawable(null);
+                button8.setImageDrawable(null);
+                button9.setImageDrawable(null);
+                resetValues();
+            }
+        });
+        dialog.show();
+
+    }
+
+
 }
+

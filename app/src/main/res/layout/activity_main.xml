@@ -9,54 +9,76 @@
 
     <!--Scores-->
     <LinearLayout
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/HeartFrame"
+        android:layout_width="206dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
-        android:paddingRight="40dp"
-        android:paddingLeft="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true">
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            app:srcCompat="@drawable/cross" />
 
         <TextView
+            android:id="@+id/ScoreX"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Score X : 0"
-            android:textSize="30dp"
+            android:layout_height="match_parent"
+            android:text="Score: 0"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:id="@+id/ScoreX">
-
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Score O : 0"
             android:textSize="30dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:id="@+id/ScoreO">
+            android:textStyle="bold">
 
         </TextView>
     </LinearLayout>
 
-    <!--Button 1-->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            app:srcCompat="@drawable/circle"/>
+
+        <TextView
+            android:id="@+id/ScoreO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Score: 0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
     <RelativeLayout
         android:id="@+id/btn1"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_centerInParent="true"
         android:layout_above="@id/btn5"
         android:layout_toStartOf="@id/btn2"
         android:layout_marginBottom="20dp"
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage1">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -73,11 +95,9 @@
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage2">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -86,18 +106,15 @@
         android:id="@+id/btn3"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_centerInParent="true"
         android:layout_above="@id/btn5"
         android:layout_toEndOf="@id/btn2"
         android:layout_marginBottom="20dp"
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage3">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -111,11 +128,9 @@
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage4">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -130,11 +145,9 @@
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage5">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -148,11 +161,9 @@
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage6"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage6">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -168,11 +179,9 @@
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage7"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage7">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -189,11 +198,9 @@
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage8"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage8">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -209,11 +216,9 @@
         android:background="#001029">
 
         <ImageView
+            android:id="@+id/buttonImage9"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
-            android:id="@+id/buttonImage9">
-        </ImageView>
+            android:layout_height="match_parent"></ImageView>
 
     </RelativeLayout>
 
@@ -240,11 +245,10 @@
     <RelativeLayout
         android:layout_width="8dp"
         android:layout_height="350dp"
-        android:background="#E8990E"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="-14dp"
         android:layout_toStartOf="@id/btn5"
-        android:layout_marginEnd="-14dp">
-    </RelativeLayout>
+        android:background="#E8990E"></RelativeLayout>
 
     <RelativeLayout
         android:layout_width="8dp"
@@ -257,17 +261,16 @@
 
     <!--Reset button-->
     <Button
+        android:id="@+id/Reset"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_below="@+id/btn8"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
+        android:backgroundTint="#E01688"
         android:text="Reset"
-        android:id="@+id/Reset"
-        android:textSize="20sp"
         android:textColor="@color/white"
-        android:backgroundTint="#E01688">
-    </Button>
+        android:textSize="20sp"></Button>
 
 
 
