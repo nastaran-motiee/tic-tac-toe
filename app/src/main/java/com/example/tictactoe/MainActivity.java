@@ -23,9 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView scorex,scoreo;
     private Button Reset;
 
-    //-----
     private Dialog dialog;
-    //------
 
 
 
@@ -90,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 winningGame();
                 button1.setEnabled(false);
 
+
             }
         });
 
@@ -108,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
                 choosePlayer();
                 winningGame();
                 button2.setEnabled(false);
-
             }
         });
 
@@ -251,66 +249,114 @@ public class MainActivity extends AppCompatActivity {
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage2).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
         }else if(b4==1 && b5==1 && b6==1){
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
         }else if(b7==1 && b8==1 && b9==1){
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
         }else if(b1==1 && b4==1 && b7==1){
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
         }else if(b2==1 && b5==1 && b8==1){
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage2).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
         }else if(b3==1 && b6==1 && b9==1){
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
         }else if(b1==1 && b5==1 && b9==1){
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
         }else if(b3==1 && b5==1 && b7==1){
             openHeartDialog();
             xCount++;
             scorex.setText("Score: "+String.valueOf(xCount));
+            findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
         }else if(b1==0 && b2==0 && b3==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
+            findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage2).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
         }else if(b4==0 && b5==0 && b6==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
+            findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
         }else if(b7==0 && b8==0 && b9==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
-        }else if(b1==0 && b4==0 && b9==0){
+            findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
+        }else if(b1==0 && b4==0 && b7==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
+            findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
         }else if(b2==0 && b5==0 && b8==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
+            findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
         }else if(b3==0 && b6==0 && b9==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
+            findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
         }else if(b1==0 && b5==0 && b9==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
+            findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
         }else if(b3==0 && b5==0 && b7==0){
             openBrainDialog();
             oCount++;
             scoreo.setText("Score: "+String.valueOf(oCount));
+            findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
+            findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
         }else{
             if(i == 9){
                openXDialog();
@@ -348,6 +394,15 @@ public class MainActivity extends AppCompatActivity {
         button7.setEnabled(true);
         button8.setEnabled(true);
         button9.setEnabled(true);
+        findViewById(R.id.buttonImage1).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage2).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage3).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage4).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage5).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage6).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage7).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage8).setBackgroundColor(0xFF001029);
+        findViewById(R.id.buttonImage9).setBackgroundColor(0xFF001029);
 
     }
 

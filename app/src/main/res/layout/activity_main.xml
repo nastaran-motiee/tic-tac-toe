@@ -66,6 +66,7 @@
 
     </LinearLayout>
 
+    <!--Button 1-->
     <RelativeLayout
         android:id="@+id/btn1"
         android:layout_width="90dp"
@@ -132,6 +133,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ImageView>
 
+
     </RelativeLayout>
 
     <!--Button 5-->
@@ -148,6 +150,8 @@
             android:id="@+id/buttonImage5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ImageView>
+
+
 
     </RelativeLayout>
 
@@ -253,11 +257,10 @@
     <RelativeLayout
         android:layout_width="8dp"
         android:layout_height="350dp"
-        android:background="#E8990E"
         android:layout_centerVertical="true"
+        android:layout_marginStart="-14dp"
         android:layout_toEndOf="@id/btn5"
-        android:layout_marginStart="-14dp">
-    </RelativeLayout>
+        android:background="#E8990E"></RelativeLayout>
 
     <!--Reset button-->
     <Button
