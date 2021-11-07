@@ -40,14 +40,17 @@ public class MainActivity extends AppCompatActivity {
         button7 = findViewById(R.id.buttonImage7);
         button8 = findViewById(R.id.buttonImage8);
         button9 = findViewById(R.id.buttonImage9);
-        //------------//
+
         dialog = new Dialog(this);
-        //----------//
+
 
         scorex = findViewById(R.id.ScoreX);
         scoreo = findViewById(R.id.ScoreO);
 
         Reset = findViewById(R.id.Reset);
+
+        findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+
 
         Reset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -252,6 +255,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage2).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b4==1 && b5==1 && b6==1){
             openHeartDialog();
             xCount++;
@@ -259,6 +265,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b7==1 && b8==1 && b9==1){
             openHeartDialog();
             xCount++;
@@ -266,6 +275,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b1==1 && b4==1 && b7==1){
             openHeartDialog();
             xCount++;
@@ -273,6 +285,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b2==1 && b5==1 && b8==1){
             openHeartDialog();
             xCount++;
@@ -280,6 +295,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage2).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b3==1 && b6==1 && b9==1){
             openHeartDialog();
             xCount++;
@@ -287,6 +305,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b1==1 && b5==1 && b9==1){
             openHeartDialog();
             xCount++;
@@ -294,6 +315,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b3==1 && b5==1 && b7==1){
             openHeartDialog();
             xCount++;
@@ -301,6 +325,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
+            startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }else if(b1==0 && b2==0 && b3==0){
             openBrainDialog();
             oCount++;
@@ -308,6 +335,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage2).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else if(b4==0 && b5==0 && b6==0){
             openBrainDialog();
             oCount++;
@@ -315,6 +345,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else if(b7==0 && b8==0 && b9==0){
             openBrainDialog();
             oCount++;
@@ -322,6 +355,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else if(b1==0 && b4==0 && b7==0){
             openBrainDialog();
             oCount++;
@@ -329,6 +365,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage4).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else if(b2==0 && b5==0 && b8==0){
             openBrainDialog();
             oCount++;
@@ -336,6 +375,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage8).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else if(b3==0 && b6==0 && b9==0){
             openBrainDialog();
             oCount++;
@@ -343,6 +385,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage6).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else if(b1==0 && b5==0 && b9==0){
             openBrainDialog();
             oCount++;
@@ -350,6 +395,9 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage1).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage9).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else if(b3==0 && b5==0 && b7==0){
             openBrainDialog();
             oCount++;
@@ -357,20 +405,30 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.buttonImage3).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage5).setBackgroundColor(0xFFff0000);
             findViewById(R.id.buttonImage7).setBackgroundColor(0xFFff0000);
+            startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else{
             if(i == 9){
                openXDialog();
             }
         }
 
+
+
     }
 
     private void choosePlayer(){
         if(startGame.equals("X")){
             startGame = "O";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
         }else{
             startGame = "X";
+            findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+            findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
         }
+
     }
 
     private void resetValues() {

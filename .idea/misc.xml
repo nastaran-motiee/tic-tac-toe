@@ -5,9 +5,13 @@
       <map>
         <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/drawable/customborder.xml" value="0.2703125" />
         <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/border.xml" value="0.1634963768115942" />
         <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/brain_dialog.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/custom_border.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/customborder.xml" value="0.1634963768115942" />
         <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/heart_dialog.xml" value="0.17753623188405798" />
         <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/heart_layout.xml" value="0.17753623188405798" />
+        <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/image_border.xml" value="0.17119565217391305" />
         <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/win_dialog.xml" value="0.17753623188405798" />
         <entry key="..\:/Users/nnast/AndroidStudioProjects/TicTacToe/app/src/main/res/layout/x_dialog.xml" value="0.2115036231884058" />
       </map>
