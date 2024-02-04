@@ -42,7 +42,7 @@
             android:id="@+id/ScoreX"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Score: 0"
+            android:text="0"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30dp"
@@ -80,13 +80,11 @@
         </FrameLayout>
 
 
-
-
         <TextView
             android:id="@+id/ScoreO"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Score: 0"
+            android:text="0"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30dp"
