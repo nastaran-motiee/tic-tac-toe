@@ -211,11 +211,11 @@ public class MainActivity extends AppCompatActivity {
 
         switch(currentPlayer){
             case X:
-                findViewById(R.id.HeartBorder).setBackgroundColor(0xFFFFFFFF);
+                findViewById(R.id.HeartBorder).setBackgroundColor(0xA63F51B5);
                 findViewById(R.id.BrainBorder).setBackgroundColor(0xFF001029);
                 break;
             case O:
-                findViewById(R.id.BrainBorder).setBackgroundColor(0xFFFFFFFF);
+                findViewById(R.id.BrainBorder).setBackgroundColor(0xA63F51B5);
                 findViewById(R.id.HeartBorder).setBackgroundColor(0xFF001029);
                 break;
 
