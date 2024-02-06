@@ -2,7 +2,7 @@
 This is a simple Tic-Tac-Toe game developed using Android Studio and Java.
 
 ## Demo
-[Tic Tac Toe - Android Emulator.webm](https://user-images.githubusercontent.com/33676320/196224200-03c951f5-ae35-417c-905e-5c4eeee10e99.webm)
+[Screen_recording_20240206_220347.webm](https://github.com/nastaran-motiee/tic-tac-toe/assets/33676320/9968aed7-e85f-4e59-9305-cea917aebd3c)
 
 
 ## Features
