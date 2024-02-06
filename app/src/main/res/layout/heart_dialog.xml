@@ -17,9 +17,9 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wins"
-        android:textColor="@color/white"
+        android:text="WINNER!"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="50dp" />
 
     <Button
