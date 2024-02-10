@@ -9,3 +9,6 @@ This is a simple Tic-Tac-Toe game developed using Android Studio and Java.
 - 3x3 game board
 - Track win-loss statistics
 - Reset button and new game option
+
+## License
+This project is licensed under the terms of the MIT license.
