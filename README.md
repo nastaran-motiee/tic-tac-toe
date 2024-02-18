@@ -1,7 +1,8 @@
-## Tic-Tac-Toe Game
+# Tic-Tac-Toe Game
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This is a simple Tic-Tac-Toe game developed using Android Studio and Java.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Demo
 [Screen_recording_20240206_220347.webm](https://github.com/nastaran-motiee/tic-tac-toe/assets/33676320/44b65931-bfb0-4910-92cd-a026dea3095b)
